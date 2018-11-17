@@ -68,3 +68,29 @@ int charInArray(char selectedTile, char used[]){
 	}
 	return 0;
 }
+
+//Function that returns 1 if the inputed value is not within the valid range for tic tac toe
+int isNum(int input){
+	switch(input){
+		case 1:
+			return 0;
+		case 2:
+			return 0;
+		case 3:
+			return 0;
+		case 4:
+			return 0;
+		case 5:
+			return 0;
+		case 6:
+			return 0;
+		case 7:
+			return 0;
+		case 8:
+			return 0;
+		case 9:
+			return 0;
+		default:
+			return 1;
+	}
+}
