@@ -19,5 +19,6 @@ int checkWinCol(char gameState[]);
 int checkWinDiag(char gameState[]);
 int checkVictory(char gameState[]);
 int charInArray(char selectedTile, char used[]);
+int isNum(int input);
 
 #endif
