@@ -41,7 +41,8 @@ int playTTT(){
 		do {
 			printf("Player %d, input tile number to place '%c': ", player2Turn + 1, pieceToPlay);
 			scanf("%d", &selectedTile);
-		} while ((selectedTile < 1 || selectedTile > 9) || (charInArray(selectedTile, invalidMoves) == 1));
+			scanf("%*[^\n]");
+		} while ((selectedTile < 1 || selectedTile > 9) || (charInArray(selectedTile, invalidMoves) == 1) ||  (isNum(selectedTile) == 1));
 
 		invalidMoves[i] = selectedTile; //Add the current selected tile to the invalidMoves array for later input validation
 		gameState[selectedTile] = pieceToPlay; //Change the selected tile to the current game piece depending on player
