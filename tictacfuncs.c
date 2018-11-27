@@ -60,7 +60,7 @@ int checkVictory(char gameState[]){
 }
 
 //Compare current selected tile to an array of tiles that have already been used, if it is already used, return 1
-int charInArray(char selectedTile, char used[]){
+int validMove(char selectedTile, char used[]){
 	for (int i = 0; i < 10; i++){
 		if(selectedTile == used[i]){
 			return 1;
@@ -70,7 +70,7 @@ int charInArray(char selectedTile, char used[]){
 }
 
 //Function that returns 1 if the inputed value is not within the valid range for tic tac toe
-int isNum(int input){
+int inRange(int input){
 	switch(input){
 		case 1:
 			return 0;
