@@ -18,7 +18,7 @@ int checkWinRow(char gameState[]);
 int checkWinCol(char gameState[]);
 int checkWinDiag(char gameState[]);
 int checkVictory(char gameState[]);
-int charInArray(char selectedTile, char used[]);
-int isNum(int input);
+int validMove(char selectedTile, char used[]);
+int inRange(int input);
 
 #endif
