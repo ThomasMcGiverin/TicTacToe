@@ -73,21 +73,13 @@ int validMove(char selectedTile, char used[]){
 int inRange(int input){
 	switch(input){
 		case 1:
-			return 0;
 		case 2:
-			return 0;
 		case 3:
-			return 0;
 		case 4:
-			return 0;
 		case 5:
-			return 0;
 		case 6:
-			return 0;
 		case 7:
-			return 0;
 		case 8:
-			return 0;
 		case 9:
 			return 0;
 		default:
